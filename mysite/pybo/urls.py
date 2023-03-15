@@ -10,6 +10,7 @@ urlpatterns = [
          base_views.index, name='index'),
     path('<int:question_id>/',
          base_views.detail, name='detail'),
+   
 
     # question_views.py
     path('question/create/',
@@ -26,4 +27,5 @@ urlpatterns = [
          answer_views.answer_modify, name='answer_modify'),
     path('answer/delete/<int:answer_id>/',
          answer_views.answer_delete, name='answer_delete'),
+    
 ]
